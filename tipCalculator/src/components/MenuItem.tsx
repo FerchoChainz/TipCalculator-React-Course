@@ -1,8 +1,9 @@
-import type { MenuItem } from "../types";
+import type { MenuItem as MenuItemType } from "../types";
+
 
 type MenuItemProps = {
-  item: MenuItem;
-  addItem: (item: MenuItem) => void;
+  item: MenuItemType;
+  addItem: (item: MenuItemType) => void;
 };
 
 function MenuItem({ item, addItem }: MenuItemProps) {
