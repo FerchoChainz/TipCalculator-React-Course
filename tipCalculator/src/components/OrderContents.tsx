@@ -13,9 +13,7 @@ function OrderContents({ order , removeItem} : orderContentsProps) {
         <h2 className='font-black text-4xl'>Consumo</h2>
 
         <div className="space-y-3 mt-7">
-            {order.length === 0 ? 
-                <p className="text-center">La orden esta vacia</p>
-            : (order.map((item) => (
+            {order.map((item) => (
 
                 <div key={item.id} className="flex justify-between items-center border-t border-gray-200 py-5 last-of-type:border-b">
 
@@ -36,7 +34,7 @@ function OrderContents({ order , removeItem} : orderContentsProps) {
                     </button>
 
                 </div>
-            )))
+            ))
             
             }
         </div>
